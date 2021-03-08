@@ -120,13 +120,15 @@ WSGI_APPLICATION = 'trendy_boutique.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
+
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
-        'default': dj_database_url.parse(postgres://azbtiltqgvicbr:2b03e49cf72002263f738b77f166abed8ee240d0ad9e4b4eb61ebe620eaa34e2@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dcl9hfq5queebp)
+        'default': dj_database_url.parse('postgres://azbtiltqgvicbr:2b03e49cf72002263f738b77f166abed8ee240d0ad9e4b4eb61ebe620eaa34e2@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dcl9hfq5queebp)')
     }
 
 
@@ -181,7 +183,7 @@ if 'USE_AWS' in os.environ:
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'Tattered75-trendy-boutique'
-    AWS_S3_REGION_NAME = 'us-east-1'
+    AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
