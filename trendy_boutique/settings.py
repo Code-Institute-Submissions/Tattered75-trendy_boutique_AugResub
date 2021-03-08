@@ -126,10 +126,7 @@ if 'DATABASE_URL' in os.environ:
     }
 else:
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+        'default': dj_database_url.parse(postgres://azbtiltqgvicbr:2b03e49cf72002263f738b77f166abed8ee240d0ad9e4b4eb61ebe620eaa34e2@ec2-54-228-9-90.eu-west-1.compute.amazonaws.com:5432/dcl9hfq5queebp)
     }
 
 

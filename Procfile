@@ -1,0 +1,1 @@
+web: gunicorn trendy_boutique.wsgi:application
