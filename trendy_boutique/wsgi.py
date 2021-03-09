@@ -1,4 +1,5 @@
 """
+Code from lesson used
 WSGI config for trendy_boutique project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.

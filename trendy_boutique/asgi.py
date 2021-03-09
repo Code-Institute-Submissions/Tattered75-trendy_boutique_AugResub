@@ -1,4 +1,5 @@
 """
+Code from lesson used
 ASGI config for trendy_boutique project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
