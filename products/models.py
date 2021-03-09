@@ -1,6 +1,6 @@
 from django.db import models
 
-
+# Code from lesson
 class Category(models.Model):
 
     class Meta:
