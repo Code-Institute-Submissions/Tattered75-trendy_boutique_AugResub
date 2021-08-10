@@ -105,7 +105,7 @@ a.category-badge > span.badge:hover {
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #000;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -202,7 +202,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
+    color: #000;
 }
 
 .allauth-form-inner-content button,
